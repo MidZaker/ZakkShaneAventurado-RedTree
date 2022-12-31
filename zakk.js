@@ -35,7 +35,7 @@ function background2(){
 
 }
 function background3(){
-    document.querySelector('.sect1').style.background = "url(Section1Snow.jpg') center center / cover";
+    document.querySelector('.sect1').style.background = "url('Section1Snow.jpg') center center / cover";
     document.getElementById('mainword').textContent ="White Season"
 
 }
