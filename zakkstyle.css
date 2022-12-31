@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@500&family=Montserrat:ital,wght@1,300&family=Silkscreen&family=Unbounded:wght@500&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+ margin:0;
+ padding:0;
+overflow-x: hidden;
+box-sizing: border-box;
+
+
+
+
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-y: visible;
+}
+
+a{
+    text-decoration: none;
+}
+
+html #overlay{
+    display: none;
+}
+
+body{
+    background-color: rgb(19, 19, 19);
+}
+
+
+
+ul{
+    padding-bottom: 20px;
+    background-color: rgb(255, 102, 68);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul .ul_nav{
+    width: 100%;
+}
+.logo{
+    
+    gap: 1em;
+    display:flex;
+  margin-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  
+ 
+}
+
+.logo img{
+    border-radius: 10px;
+}
+  .tree_logo{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 30px;
+    color: white;
+    cursor: default;
+  }
+
+  .tree_logo span{
+    cursor:default;
+    color: rgb(151, 33, 12);
+  }
+
+
+
+#list{
+    
+    margin-top: 5px;
+    display: flex;
+}
+
+#sidebarlogo{
+    display: none;
+}
+
+
+li{
+    margin-top: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.quote a{
+    text-decoration: none;
+    color: white;
+    cursor: default;
+    transform: translateX(1px);
+    transition: 0.1s;
+    outline: white;
+    position: relative;
+}
+
+.quote a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.25s ease-out;
+}
+
+.quote a:hover::before{
+    width: 100%;
+}
+
+
+/* Section area section 1 */
+
+.sect1{
+
+    position: relative;
+    overflow-y: hidden;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(/Practicezaker/Section1.jpg);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    transition: 0.5s;
+    
+  
+
+}
+
+
+
+
+.contain_sect1{
+    font-family: 'Inter', sans-serif;
+ font-size: 60px;
+ color: white;
+ font-weight: bolder;
+ margin: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ justify-items: center;
+ flex-shrink: 0;
+ flex-direction: column;
+ flex-wrap: wrap;
+overflow: visible;
+ animation: scale1 3s ease-in;
+}
+
+@keyframes scale1{
+0%{
+    transform: scale(0);
+}
+20%{
+    transform: scale(0);
+}
+40%{
+    transform: scale(1.2);
+}
+100%{
+    transform:scale(1.1);
+}
+ 
+}
+
+
+
+/* Animation from from h2 */
+
+@keyframes move {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+/* section1 screen responsive interaction! */
+@media (max-width: 800px) {
+    .contain_sect1 h1{
+        font-size: 50px;
+
+    }
+    .contain_sect1 h2{
+        font-size: 20px;
+    }
+    p{
+
+      font-size: 15px;
+    }
+    .quote{
+        display: none;
+    }
+}
+
+ h2{
+    animation: move 1s linear infinite;
+    opacity: 50%;
+    font-size: 20px;
+    display: none;
+}
+
+.innersect1{
+    position: absolute;
+   margin: 50px;
+   align-items: center;
+   justify-content: center;
+   height: 50%;
+   color: rgb(8, 8, 8);
+   overflow-y: hidden;
+   
+  
+}
+
+.innersect1 p{
+    margin: auto;
+    max-height: 350px;
+   
+
+}
+
+
+
+.back-frem{
+    width:18rem;
+    height: 6rem;
+    background: wheat;
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    justify-content: space-around;
+    border-radius: 10px;
+    opacity: 0.5;
+    align-items: center;
+    z-index: 0;
+    flex-direction: row;
+}
+
+.back-frem .back-change{
+  
+    height: 91px;
+    background: wheat;
+    overflow: hidden;
+    border-radius: 23px;
+    z-index: 1;
+}
+
+.back-frem .back-change img{
+   
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*Section area section 2 */
+
+#sect2{
+   
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow-y: hidden;
+       
+}
+
+.contain_works{
+    
+    margin: 150px 0px 200px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+   
+}
+
+.contain_sect2{
+    
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    box-shadow: 1px 1px 5px;
+    min-width: 400px;
+    max-height: 800px;
+   margin: 50px 10px  20px;
+   flex-grow: 1;
+   overflow-y: hidden;
+ 
+}
+
+
+
+.innersect2{
+    overflow-y: hidden;
+    margin: 30px;
+    flex:1;
+}
+
+.innersect2 p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+@media (max-width:9000px) {
+    .sect2{
+        overflow-y: scroll;
+    }
+
+    .innersect2 p{
+        font-size: 13px;
+    }
+
+   
+    
+}
+
+
+@media (max-width:600px) {
+
+    header{
+        /* z-index gamit kay na sya if ganahan ka e front nmo ang selected class or id */
+        z-index: 1;
+        width: 100%;
+        position:fixed;
+    }
+
+    .contain_sect1{
+        animation: none;
+    }
+
+    .back-frem{
+        position: absolute;
+        bottom: 50px;
+        height: 100px;
+        background: none;
+        opacity: 1;
+    }
+
+    .sect1{
+        height: 100vh;
+    }
+    .contain_sect2{
+        width: 200px;
+        height: 300px;
+        overflow-y: visible;
+    }
+    .sect2{
+        overflow-y:visible;
+        height: 500vh;
+    }
+    .contain_works{
+        margin: 0px 0px 00px ;
+        overflow-y: hidden;
+    }
+
+    #sidebarlogo{
+        margin-top: 10px;
+        margin-right: 20px;
+        width: 30px;
+        display: flex;
+       
+    }
+    h2{
+        color: rgb(223, 219, 219);
+        margin-top: 20px;
+        transition: 1s;
+        opacity: 0.5;
+        display: block;
+    }
+
+
+
+    #overlay{
+        margin: auto;
+        bottom: 0;
+        height: 100%;
+        width: 200%;
+        position: fixed;
+        background-color: white;
+        z-index: 1;
+        transition: 0.2s ease-in;
+        transform: translateX(10px);
+       
+      
+    }
+
+   .overlayword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+        color: rgb(255, 255, 255); 
+        background-color: rgb(245, 90, 63);
+        
+    }
+
+   
+    
+    .overlayword h1{
+
+        font-size: 40px;
+        margin: 30px;
+    }
+
+    .wordbottm{
+        color: black;
+        font-size: 30px;
+        line-height: 100px;
+    }
+
+    .wordbottm a{
+        color: black;
+    }
+
+    .bottomvisit{
+        background-color: rgb(245, 90, 63);;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        height: 100px;
+    }
+
+    .bottomvisit h1{
+        color: white;
+        margin-top: 10px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    
+
+.socialmedia img{
+   
+    margin-right: 10px;
+}
+ 
+
+
+    
+
+   .quote{
+    display:none;
+   };
+
+
+
+    .overlayword h3, a{  
+
+        color: rgb(255, 73, 73);
+        display: block;
+    }
+}
+
+
+/* Section 3 area! */
+
+#sect3{
+   
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    display: flex;
+    height: 100px;
+    box-shadow: 1px 1px 5px;
+    
+}
+
+#sect3 h1{
+    margin-left: 25px;
+    color: rgb(27, 27, 27);
+    font-size: 40px;
+}
+
+#facebookcontact{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+
+}
+ .facebookcontactinside{
+  
+background-color: rgb(252, 252, 252);
+width: 800px;
+height: 600px;
+box-shadow: 1px 1px 5px;
+justify-content: center;
+justify-items: center;
+}
+
+.facebookcontactinside button{
+    background-color:  rgb(255, 102, 68);
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    outline: none;
+   cursor: pointer;
+   padding: 15px;
+    border-radius: 10px;
+    
+}
+
+
+.textareacontact{
+    margin-top: 50px;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.textareacontact input, textarea{
+width: 300px;
+justify-content: center;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+    }
+
+    #message{
+        
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+        justify-items: center;
+        padding-top: 10px;
+    }
+
+   
+
+.facebookcontactinside h1{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.headerdaw{
+    background-color: rgb(255, 102, 68) ;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+.headerdaw h1{
+    font-size: 20px;
+    opacity: 0.4;
+    margin-top: 20px;
+}
+
+
+/* scroll style daw */
+
+.reveal{
+    
+    transform: translateY(150px);
+    opacity: 0;
+    transform-origin: 1.2s;
+    transition: 2s;
+}
+
+.active{
+    
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 2s;
+}
+
+
+
+
