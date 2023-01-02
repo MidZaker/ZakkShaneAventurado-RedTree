@@ -32,7 +32,7 @@ body{
 
 ul{
     padding-bottom: 20px;
-    background-color: rgb(255, 102, 68);
+    background-color: rgb(43, 46, 74);
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -429,7 +429,7 @@ overflow: visible;
     }
 
     .bottomvisit{
-        background-color: rgb(245, 90, 63);;
+        background-color: rgb(43, 46, 74);
         width: 100%;
         position: fixed;
         bottom: 0px;
@@ -513,7 +513,7 @@ justify-items: center;
 }
 
 .facebookcontactinside button{
-    background-color:  rgb(255, 102, 68);
+    background-color:  rgb(43, 46, 74);
     color: white;
     text-align: center;
     width: 200px;
@@ -562,7 +562,7 @@ padding-bottom: 10px;
 }
 
 .headerdaw{
-    background-color: rgb(255, 102, 68) ;
+    background-color: rgb(43, 46, 74);
     width: 100vw;
     height: 10vh;
     justify-content: center;
